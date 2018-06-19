@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MinecraftOL.iml" filepath="$PROJECT_DIR$/MinecraftOL.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MinecraftOL_api.iml" filepath="$PROJECT_DIR$/.idea/modules/MinecraftOL_api.iml" group="MinecraftOL" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MinecraftOL_main.iml" filepath="$PROJECT_DIR$/.idea/modules/MinecraftOL_main.iml" group="MinecraftOL" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MinecraftOL_test.iml" filepath="$PROJECT_DIR$/.idea/modules/MinecraftOL_test.iml" group="MinecraftOL" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_minecraftol_main" default="compile.module.minecraftol_main">
+  <dirname property="module.minecraftol_main.basedir" file="${ant.file.module_minecraftol_main}"/>
+  
+  <property name="module.jdk.home.minecraftol_main" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.minecraftol_main" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.minecraftol_main" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.minecraftol_main" value="-encoding UTF-8 -source 1.6 -target 1.6 ${compiler.args}"/>
+  
+  <property name="minecraftol_main.output.dir" value="${module.minecraftol_main.basedir}/../../classes/production/MinecraftOL_main"/>
+  <property name="minecraftol_main.testoutput.dir" value="${module.minecraftol_main.basedir}/../../classes/test/MinecraftOL_main"/>
+  
+  <path id="minecraftol_main.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="minecraftol_main.module.production.classpath">
+    <path refid="${module.jdk.classpath.minecraftol_main}"/>
+    <pathelement location="${minecraftol_api.output.dir}"/>
+    <path refid="library.gradle:_:forgesrc:1.7.10-10.13.4.1558-1.7.10.classpath"/>
+    <path refid="library.gradle:_net.minecraft:launchwrapper:1.12.classpath"/>
+    <path refid="library.gradle:_com.google.code.findbugs:jsr305:1.3.9.classpath"/>
+    <path refid="library.gradle:_org.ow2.asm:asm-debug-all:5.0.3.classpath"/>
+    <path refid="library.gradle:_com.typesafe.akka:akka-actor_2.11:2.3.3.classpath"/>
+    <path refid="library.gradle:_com.typesafe:config:1.2.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-actors-migration_2.11:1.1.0.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-compiler:2.11.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-library:2.11.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-parser-combinators_2.11:1.0.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-reflect:2.11.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-swing_2.11:1.0.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-xml_2.11:1.0.2.classpath"/>
+    <path refid="library.gradle:_net.sf.jopt-simple:jopt-simple:4.5.classpath"/>
+    <path refid="library.gradle:_lzma:lzma:0.0.1.classpath"/>
+    <path refid="library.gradle:_com.mojang:realms:1.3.5.classpath"/>
+    <path refid="library.gradle:_org.apache.commons:commons-compress:1.8.1.classpath"/>
+    <path refid="library.gradle:_org.apache.httpcomponents:httpclient:4.3.3.classpath"/>
+    <path refid="library.gradle:_commons-logging:commons-logging:1.1.3.classpath"/>
+    <path refid="library.gradle:_org.apache.httpcomponents:httpcore:4.3.2.classpath"/>
+    <path refid="library.gradle:_java3d:vecmath:1.3.1.classpath"/>
+    <path refid="library.gradle:_net.sf.trove4j:trove4j:3.0.3.classpath"/>
+    <path refid="library.gradle:_com.ibm.icu:icu4j-core-mojang:51.2.classpath"/>
+    <path refid="library.gradle:_com.paulscode:codecjorbis:20101023.classpath"/>
+    <path refid="library.gradle:_com.paulscode:codecwav:20101023.classpath"/>
+    <path refid="library.gradle:_com.paulscode:libraryjavasound:20101123.classpath"/>
+    <path refid="library.gradle:_com.paulscode:librarylwjglopenal:20100824.classpath"/>
+    <path refid="library.gradle:_com.paulscode:soundsystem:20120107.classpath"/>
+    <path refid="library.gradle:_io.netty:netty-all:4.0.10.final.classpath"/>
+    <path refid="library.gradle:_com.google.guava:guava:17.0.classpath"/>
+    <path refid="library.gradle:_org.apache.commons:commons-lang3:3.3.2.classpath"/>
+    <path refid="library.gradle:_commons-io:commons-io:2.4.classpath"/>
+    <path refid="library.gradle:_commons-codec:commons-codec:1.9.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput:2.0.5.classpath"/>
+    <path refid="library.gradle:_net.java.jutils:jutils:1.0.0.classpath"/>
+    <path refid="library.gradle:_com.google.code.gson:gson:2.2.4.classpath"/>
+    <path refid="library.gradle:_com.mojang:authlib:1.5.16.classpath"/>
+    <path refid="library.gradle:_org.apache.logging.log4j:log4j-api:2.0-beta9.classpath"/>
+    <path refid="library.gradle:_org.apache.logging.log4j:log4j-core:2.0-beta9.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl:2.9.1.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl_util:2.9.1.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch:5.16.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-actors:2.11.0.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.modules:scala-xml_2.11:1.0.2.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.modules:scala-parser-combinators_2.11:1.0.1.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput-platform:natives-linux:2.0.5.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput-platform:natives-windows:2.0.5.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput-platform:natives-osx:2.0.5.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-platform:natives-windows-32:5.16.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-platform:natives-windows-64:5.16.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-platform:natives-osx:5.16.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-external-platform:natives-windows-32:4.5.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-external-platform:natives-windows-64:4.5.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl-platform:natives-windows:2.9.1.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl-platform:natives-linux:2.9.1.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl-platform:natives-osx:2.9.1.classpath"/>
+  </path>
+  
+  <path id="minecraftol_main.runtime.production.module.classpath">
+    <pathelement location="${minecraftol_main.output.dir}"/>
+    <path refid="minecraftol_api.runtime.production.module.classpath"/>
+    <path refid="library.gradle:_:forgesrc:1.7.10-10.13.4.1558-1.7.10.classpath"/>
+    <path refid="library.gradle:_net.minecraft:launchwrapper:1.12.classpath"/>
+    <path refid="library.gradle:_com.google.code.findbugs:jsr305:1.3.9.classpath"/>
+    <pathelement location="C:/Users/user/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1558-1.7.10/start"/>
+    <path refid="library.gradle:_org.ow2.asm:asm-debug-all:5.0.3.classpath"/>
+    <path refid="library.gradle:_com.typesafe.akka:akka-actor_2.11:2.3.3.classpath"/>
+    <path refid="library.gradle:_com.typesafe:config:1.2.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-actors-migration_2.11:1.1.0.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-compiler:2.11.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-library:2.11.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-parser-combinators_2.11:1.0.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-reflect:2.11.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-swing_2.11:1.0.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-xml_2.11:1.0.2.classpath"/>
+    <path refid="library.gradle:_net.sf.jopt-simple:jopt-simple:4.5.classpath"/>
+    <path refid="library.gradle:_lzma:lzma:0.0.1.classpath"/>
+    <path refid="library.gradle:_com.mojang:realms:1.3.5.classpath"/>
+    <path refid="library.gradle:_org.apache.commons:commons-compress:1.8.1.classpath"/>
+    <path refid="library.gradle:_org.apache.httpcomponents:httpclient:4.3.3.classpath"/>
+    <path refid="library.gradle:_commons-logging:commons-logging:1.1.3.classpath"/>
+    <path refid="library.gradle:_org.apache.httpcomponents:httpcore:4.3.2.classpath"/>
+    <path refid="library.gradle:_java3d:vecmath:1.3.1.classpath"/>
+    <path refid="library.gradle:_net.sf.trove4j:trove4j:3.0.3.classpath"/>
+    <path refid="library.gradle:_com.ibm.icu:icu4j-core-mojang:51.2.classpath"/>
+    <path refid="library.gradle:_com.paulscode:codecjorbis:20101023.classpath"/>
+    <path refid="library.gradle:_com.paulscode:codecwav:20101023.classpath"/>
+    <path refid="library.gradle:_com.paulscode:libraryjavasound:20101123.classpath"/>
+    <path refid="library.gradle:_com.paulscode:librarylwjglopenal:20100824.classpath"/>
+    <path refid="library.gradle:_com.paulscode:soundsystem:20120107.classpath"/>
+    <path refid="library.gradle:_io.netty:netty-all:4.0.10.final.classpath"/>
+    <path refid="library.gradle:_com.google.guava:guava:17.0.classpath"/>
+    <path refid="library.gradle:_org.apache.commons:commons-lang3:3.3.2.classpath"/>
+    <path refid="library.gradle:_commons-io:commons-io:2.4.classpath"/>
+    <path refid="library.gradle:_commons-codec:commons-codec:1.9.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput:2.0.5.classpath"/>
+    <path refid="library.gradle:_net.java.jutils:jutils:1.0.0.classpath"/>
+    <path refid="library.gradle:_com.google.code.gson:gson:2.2.4.classpath"/>
+    <path refid="library.gradle:_com.mojang:authlib:1.5.16.classpath"/>
+    <path refid="library.gradle:_org.apache.logging.log4j:log4j-api:2.0-beta9.classpath"/>
+    <path refid="library.gradle:_org.apache.logging.log4j:log4j-core:2.0-beta9.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl:2.9.1.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl_util:2.9.1.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch:5.16.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-actors:2.11.0.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.modules:scala-xml_2.11:1.0.2.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.modules:scala-parser-combinators_2.11:1.0.1.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput-platform:natives-linux:2.0.5.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput-platform:natives-windows:2.0.5.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput-platform:natives-osx:2.0.5.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-platform:natives-windows-32:5.16.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-platform:natives-windows-64:5.16.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-platform:natives-osx:5.16.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-external-platform:natives-windows-32:4.5.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-external-platform:natives-windows-64:4.5.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl-platform:natives-windows:2.9.1.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl-platform:natives-linux:2.9.1.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl-platform:natives-osx:2.9.1.classpath"/>
+  </path>
+  
+  <path id="minecraftol_main.module.classpath">
+    <path refid="${module.jdk.classpath.minecraftol_main}"/>
+    <pathelement location="${minecraftol_main.output.dir}"/>
+    <pathelement location="${minecraftol_api.testoutput.dir}"/>
+    <pathelement location="${minecraftol_api.output.dir}"/>
+    <path refid="library.gradle:_:forgesrc:1.7.10-10.13.4.1558-1.7.10.classpath"/>
+    <path refid="library.gradle:_net.minecraft:launchwrapper:1.12.classpath"/>
+    <path refid="library.gradle:_com.google.code.findbugs:jsr305:1.3.9.classpath"/>
+    <path refid="library.gradle:_org.ow2.asm:asm-debug-all:5.0.3.classpath"/>
+    <path refid="library.gradle:_com.typesafe.akka:akka-actor_2.11:2.3.3.classpath"/>
+    <path refid="library.gradle:_com.typesafe:config:1.2.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-actors-migration_2.11:1.1.0.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-compiler:2.11.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-library:2.11.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-parser-combinators_2.11:1.0.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-reflect:2.11.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-swing_2.11:1.0.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-xml_2.11:1.0.2.classpath"/>
+    <path refid="library.gradle:_net.sf.jopt-simple:jopt-simple:4.5.classpath"/>
+    <path refid="library.gradle:_lzma:lzma:0.0.1.classpath"/>
+    <path refid="library.gradle:_com.mojang:realms:1.3.5.classpath"/>
+    <path refid="library.gradle:_org.apache.commons:commons-compress:1.8.1.classpath"/>
+    <path refid="library.gradle:_org.apache.httpcomponents:httpclient:4.3.3.classpath"/>
+    <path refid="library.gradle:_commons-logging:commons-logging:1.1.3.classpath"/>
+    <path refid="library.gradle:_org.apache.httpcomponents:httpcore:4.3.2.classpath"/>
+    <path refid="library.gradle:_java3d:vecmath:1.3.1.classpath"/>
+    <path refid="library.gradle:_net.sf.trove4j:trove4j:3.0.3.classpath"/>
+    <path refid="library.gradle:_com.ibm.icu:icu4j-core-mojang:51.2.classpath"/>
+    <path refid="library.gradle:_com.paulscode:codecjorbis:20101023.classpath"/>
+    <path refid="library.gradle:_com.paulscode:codecwav:20101023.classpath"/>
+    <path refid="library.gradle:_com.paulscode:libraryjavasound:20101123.classpath"/>
+    <path refid="library.gradle:_com.paulscode:librarylwjglopenal:20100824.classpath"/>
+    <path refid="library.gradle:_com.paulscode:soundsystem:20120107.classpath"/>
+    <path refid="library.gradle:_io.netty:netty-all:4.0.10.final.classpath"/>
+    <path refid="library.gradle:_com.google.guava:guava:17.0.classpath"/>
+    <path refid="library.gradle:_org.apache.commons:commons-lang3:3.3.2.classpath"/>
+    <path refid="library.gradle:_commons-io:commons-io:2.4.classpath"/>
+    <path refid="library.gradle:_commons-codec:commons-codec:1.9.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput:2.0.5.classpath"/>
+    <path refid="library.gradle:_net.java.jutils:jutils:1.0.0.classpath"/>
+    <path refid="library.gradle:_com.google.code.gson:gson:2.2.4.classpath"/>
+    <path refid="library.gradle:_com.mojang:authlib:1.5.16.classpath"/>
+    <path refid="library.gradle:_org.apache.logging.log4j:log4j-api:2.0-beta9.classpath"/>
+    <path refid="library.gradle:_org.apache.logging.log4j:log4j-core:2.0-beta9.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl:2.9.1.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl_util:2.9.1.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch:5.16.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-actors:2.11.0.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.modules:scala-xml_2.11:1.0.2.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.modules:scala-parser-combinators_2.11:1.0.1.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput-platform:natives-linux:2.0.5.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput-platform:natives-windows:2.0.5.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput-platform:natives-osx:2.0.5.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-platform:natives-windows-32:5.16.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-platform:natives-windows-64:5.16.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-platform:natives-osx:5.16.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-external-platform:natives-windows-32:4.5.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-external-platform:natives-windows-64:4.5.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl-platform:natives-windows:2.9.1.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl-platform:natives-linux:2.9.1.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl-platform:natives-osx:2.9.1.classpath"/>
+  </path>
+  
+  <path id="minecraftol_main.runtime.module.classpath">
+    <pathelement location="${minecraftol_main.testoutput.dir}"/>
+    <pathelement location="${minecraftol_main.output.dir}"/>
+    <path refid="minecraftol_api.runtime.module.classpath"/>
+    <path refid="library.gradle:_:forgesrc:1.7.10-10.13.4.1558-1.7.10.classpath"/>
+    <path refid="library.gradle:_net.minecraft:launchwrapper:1.12.classpath"/>
+    <path refid="library.gradle:_com.google.code.findbugs:jsr305:1.3.9.classpath"/>
+    <pathelement location="C:/Users/user/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1558-1.7.10/start"/>
+    <path refid="library.gradle:_org.ow2.asm:asm-debug-all:5.0.3.classpath"/>
+    <path refid="library.gradle:_com.typesafe.akka:akka-actor_2.11:2.3.3.classpath"/>
+    <path refid="library.gradle:_com.typesafe:config:1.2.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-actors-migration_2.11:1.1.0.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-compiler:2.11.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.plugins:scala-continuations-library_2.11:1.0.2.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.plugins:scala-continuations-plugin_2.11.1:1.0.2.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-library:2.11.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-parser-combinators_2.11:1.0.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-reflect:2.11.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-swing_2.11:1.0.1.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-xml_2.11:1.0.2.classpath"/>
+    <path refid="library.gradle:_net.sf.jopt-simple:jopt-simple:4.5.classpath"/>
+    <path refid="library.gradle:_lzma:lzma:0.0.1.classpath"/>
+    <path refid="library.gradle:_com.mojang:realms:1.3.5.classpath"/>
+    <path refid="library.gradle:_org.apache.commons:commons-compress:1.8.1.classpath"/>
+    <path refid="library.gradle:_org.apache.httpcomponents:httpclient:4.3.3.classpath"/>
+    <path refid="library.gradle:_commons-logging:commons-logging:1.1.3.classpath"/>
+    <path refid="library.gradle:_org.apache.httpcomponents:httpcore:4.3.2.classpath"/>
+    <path refid="library.gradle:_java3d:vecmath:1.3.1.classpath"/>
+    <path refid="library.gradle:_net.sf.trove4j:trove4j:3.0.3.classpath"/>
+    <path refid="library.gradle:_com.ibm.icu:icu4j-core-mojang:51.2.classpath"/>
+    <path refid="library.gradle:_com.paulscode:codecjorbis:20101023.classpath"/>
+    <path refid="library.gradle:_com.paulscode:codecwav:20101023.classpath"/>
+    <path refid="library.gradle:_com.paulscode:libraryjavasound:20101123.classpath"/>
+    <path refid="library.gradle:_com.paulscode:librarylwjglopenal:20100824.classpath"/>
+    <path refid="library.gradle:_com.paulscode:soundsystem:20120107.classpath"/>
+    <path refid="library.gradle:_io.netty:netty-all:4.0.10.final.classpath"/>
+    <path refid="library.gradle:_com.google.guava:guava:17.0.classpath"/>
+    <path refid="library.gradle:_org.apache.commons:commons-lang3:3.3.2.classpath"/>
+    <path refid="library.gradle:_commons-io:commons-io:2.4.classpath"/>
+    <path refid="library.gradle:_commons-codec:commons-codec:1.9.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput:2.0.5.classpath"/>
+    <path refid="library.gradle:_net.java.jutils:jutils:1.0.0.classpath"/>
+    <path refid="library.gradle:_com.google.code.gson:gson:2.2.4.classpath"/>
+    <path refid="library.gradle:_com.mojang:authlib:1.5.16.classpath"/>
+    <path refid="library.gradle:_org.apache.logging.log4j:log4j-api:2.0-beta9.classpath"/>
+    <path refid="library.gradle:_org.apache.logging.log4j:log4j-core:2.0-beta9.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl:2.9.1.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl_util:2.9.1.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch:5.16.classpath"/>
+    <path refid="library.gradle:_org.scala-lang:scala-actors:2.11.0.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.modules:scala-xml_2.11:1.0.2.classpath"/>
+    <path refid="library.gradle:_org.scala-lang.modules:scala-parser-combinators_2.11:1.0.1.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput-platform:natives-linux:2.0.5.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput-platform:natives-windows:2.0.5.classpath"/>
+    <path refid="library.gradle:_net.java.jinput:jinput-platform:natives-osx:2.0.5.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-platform:natives-windows-32:5.16.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-platform:natives-windows-64:5.16.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-platform:natives-osx:5.16.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-external-platform:natives-windows-32:4.5.classpath"/>
+    <path refid="library.gradle:_tv.twitch:twitch-external-platform:natives-windows-64:4.5.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl-platform:natives-windows:2.9.1.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl-platform:natives-linux:2.9.1.classpath"/>
+    <path refid="library.gradle:_org.lwjgl.lwjgl:lwjgl-platform:natives-osx:2.9.1.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.minecraftol_main">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.minecraftol_main">
+    <patternset refid="excluded.from.module.minecraftol_main"/>
+  </patternset>
+  
+  <path id="minecraftol_main.module.sourcepath">
+    <dirset dir="${module.minecraftol_main.basedir}/../../src/main">
+      <include name="resources"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.minecraftol_main" depends="compile.module.minecraftol_main.production,compile.module.minecraftol_main.tests" description="Compile module MinecraftOL_main"/>
+  
+  <target name="compile.module.minecraftol_main.production" depends="register.custom.compilers,compile.module.minecraftol_api" description="Compile module MinecraftOL_main; production classes">
+    <mkdir dir="${minecraftol_main.output.dir}"/>
+    <javac2 destdir="${minecraftol_main.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.minecraftol_main}/javac">
+      <compilerarg line="${compiler.args.minecraftol_main}"/>
+      <bootclasspath refid="minecraftol_main.module.bootclasspath"/>
+      <classpath refid="minecraftol_main.module.production.classpath"/>
+      <src refid="minecraftol_main.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.minecraftol_main"/>
+    </javac2>
+    
+    <copy todir="${minecraftol_main.output.dir}">
+      <fileset dir="${module.minecraftol_main.basedir}/../../src/main/resources">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.minecraftol_main.tests" depends="register.custom.compilers,compile.module.minecraftol_main.production" description="compile module MinecraftOL_main; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.minecraftol_main" description="cleanup module">
+    <delete dir="${minecraftol_main.output.dir}"/>
+    <delete dir="${minecraftol_main.testoutput.dir}"/>
+  </target>
+</project>

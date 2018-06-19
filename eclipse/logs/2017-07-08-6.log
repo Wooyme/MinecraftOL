@@ -1,0 +1,23 @@
+[22:49:38] [main/INFO]: Setting user: Player678
+[22:49:44] [Client thread/INFO]: LWJGL Version: 2.9.1
+[22:49:45] [Client thread/ERROR]: Couldn't initialize twitch stream
+[22:50:25] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Custom RPG
+[22:50:28] [Sound Library Loader/INFO]: Sound engine started
+[22:50:34] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[22:50:34] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[22:50:34] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:Custom RPG
+[22:50:36] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[22:50:36] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[22:50:37] [Sound Library Loader/INFO]: Sound engine started
+[22:50:58] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[22:50:58] [Server thread/INFO]: Generating keypair
+[22:50:59] [Server thread/INFO]: Preparing start region for level 0
+[22:51:00] [Server thread/INFO]: Preparing spawn area: 10%
+[22:51:01] [Server thread/INFO]: Preparing spawn area: 58%
+[22:51:02] [Server thread/INFO]: Changing view distance to 12, from 10
+[22:51:03] [Server thread/INFO]: Player678[local:E:9e03061a] logged in with entity id 175 at (-4.474779781279388, 5.0, 14.21530976766477)
+[22:51:03] [Server thread/INFO]: Player678 joined the game
+[22:51:24] [Server thread/INFO]: Saving and pausing game...
+[22:51:24] [Server thread/INFO]: Saving chunks for level 'New World'/Overworld
+[22:51:24] [Server thread/INFO]: Saving chunks for level 'New World'/Nether
+[22:51:24] [Server thread/INFO]: Saving chunks for level 'New World'/The End

@@ -1,0 +1,16 @@
+[
+{
+  "modid": "customrpg",
+  "name": "Custom RPG",
+  "description": "Custom RPG.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Gink"],
+  "credits": "The Forge and FML guys, for making this example",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

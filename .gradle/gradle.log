@@ -1,0 +1,16 @@
+
+FAILURE: Build failed with an exception.
+
+* Where:
+Build file 'D:\сно╥\MinecraftOL\build.gradle' line: 21
+
+* What went wrong:
+A problem occurred evaluating root project 'MinecraftOL'.
+> java.io.EOFException: End of input at line 4903 column 6
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --debug option to get more log output.
+
+BUILD FAILED
+
+Total time: 11.604 secs

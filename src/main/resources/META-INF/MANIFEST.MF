@@ -1,0 +1,28 @@
+Manifest-Version: 1.0
+Class-Path: log4j-core-2.0-beta9.jar lzma-0.0.1.jar scala-swing_2.11-1
+ .0.1.jar scala-actors-2.11.0.jar twitch-5.16.jar scala-parser-combina
+ tors_2.11-1.0.1.jar commons-logging-1.1.3.jar scala-xml_2.11-1.0.2.ja
+ r scala-continuations-library_2.11-1.0.2.jar jsr305-1.3.9.jar lwjgl-p
+ latform-2.9.1-natives-windows.jar scala-library-2.11.1.jar config-1.2
+ .1.jar twitch-external-platform-4.5-natives-windows-32.jar codecjorbi
+ s-20101023.jar vecmath-1.3.1.jar akka-actor_2.11-2.3.3.jar httpclient
+ -4.3.3.jar lwjgl-2.9.1.jar authlib-1.5.16.jar jinput-platform-2.0.5-n
+ atives-linux.jar jopt-simple-4.5.jar commons-compress-1.8.1.jar lwjgl
+ _util-2.9.1.jar jinput-platform-2.0.5-natives-windows.jar scala-compi
+ ler-2.11.1.jar scala-actors-migration_2.11-1.1.0.jar jinput-platform-
+ 2.0.5-natives-osx.jar scala-reflect-2.11.1.jar commons-io-2.4.jar twi
+ tch-platform-5.16-natives-windows-64.jar jutils-1.0.0.jar commons-cod
+ ec-1.9.jar scala-parser-combinators_2.11-1.0.1.jar netty-all-4.0.10.F
+ inal.jar scala-continuations-plugin_2.11.1-1.0.2.jar soundsystem-2012
+ 0107.jar icu4j-core-mojang-51.2.jar httpcore-4.3.2.jar lwjgl-platform
+ -2.9.1-natives-linux.jar codecwav-20101023.jar librarylwjglopenal-201
+ 00824.jar gson-2.2.4.jar libraryjavasound-20101123.jar log4j-api-2.0-
+ beta9.jar asm-debug-all-5.0.3.jar jinput-2.0.5.jar twitch-platform-5.
+ 16-natives-osx.jar twitch-platform-5.16-natives-windows-32.jar realms
+ -1.3.5.jar lwjgl-platform-2.9.1-natives-osx.jar kotlin-runtime.jar ko
+ tlin-reflect.jar forgeSrc-1.7.10-10.13.4.1558-1.7.10.jar twitch-exter
+ nal-platform-4.5-natives-windows-64.jar trove4j-3.0.3.jar scala-xml_2
+ .11-1.0.2.jar guava-17.0.jar launchwrapper-1.12.jar commons-lang3-3.3
+ .2.jar
+Main-Class: 
+
